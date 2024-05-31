@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: #555;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-menu li a:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+
+.content {
+    padding-top: 60px; /* Add top padding to avoid content being hidden behind the navbar */
+}
+
+section {
+    height: 600px;
+    padding: 20px;
+}
+
+section:nth-of-type(odd) {
+    background-color: #f4f4f4;
+}
+
+section:nth-of-type(even) {
+    background-color: #e2e2e2;
+}
